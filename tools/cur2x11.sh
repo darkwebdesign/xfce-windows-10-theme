@@ -19,12 +19,12 @@
 # SOFTWARE.
 ##
 
-function Spotlight()
+function Cur2X11()
 {
     readonly __DIR__="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)";
     readonly __FILE__="${0##*/}";
 
-    readonly SCRIPT_NAME='LightDM GTK+ Greeter Spotlight';
+    readonly SCRIPT_NAME='Cur2x11';
     readonly SCRIPT_VERSION='1.0';
     readonly SCRIPT_AUTHOR='Raymond Schouten';
 
