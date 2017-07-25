@@ -19,6 +19,11 @@
 # SOFTWARE.
 ##
 
+if [[ "$UID" -ne 0 ]]; then
+    echo "${0##*/}: requires root permissions!";
+    exit 1;
+fi;
+
 # Declare variables
 declare scriptPath="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)";
 declare repositoryPath="$(dirname "$scriptPath")";
