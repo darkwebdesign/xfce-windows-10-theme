@@ -87,13 +87,15 @@ function Spotlight()
     {
         requireRootPermissions;
 
-        if [[ $(checkCronjobInstalled) -eq 1 ]]; then
-            showError 'cronjob already installed!';
+        rotateBackground;
+
+        if [[ $(checkCronjobInstalled) -eq 0 ]]; then
+            installCronjob;
         fi;
 
-        rotateBackground;
-        installCronjob;
-        installBackground;
+        if [[ $(checkBackgroundConfigured) -eq 0 ]]; then
+            installBackground;
+        fi;
     }
 
     function installCronjob()
@@ -111,12 +113,13 @@ function Spotlight()
     {
         requireRootPermissions;
 
-        if [[ $(checkCronjobInstalled) -eq 0 ]]; then
-            showError 'cronjob not installed!';
+        if [[ $(checkCronjobInstalled) -eq 1 ]]; then
+            uninstallCronjob;
         fi;
 
-        uninstallCronjob;
-        uninstallBackground;
+        if [[ $(checkBackgroundConfigured) -eq 1 ]]; then
+            uninstallBackground;
+        fi;
     }
 
     function uninstallCronjob()
