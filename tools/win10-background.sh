@@ -22,7 +22,7 @@
 # Declare variables
 declare scriptPath="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)";
 declare repositoryPath="$(dirname "$scriptPath")";
-declare backgroundPath="$repositoryPath/wallpapers/img0.jpg";
+declare backgroundPath="$repositoryPath/backgrounds/img0.jpg";
 
 declare -a connectedOutputs=($(xrandr | awk '/ connected (primary )?[1-9]+/ { print $1; }'));
 
