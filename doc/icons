@@ -1,0 +1,52 @@
+Applications
+-------------
+accessories-calculator		-> calc1.exe(234) (Old Windows 7 Calculator for Windows 10)
+accessories-text-editor		-> notepad.exe(2)
+libreoffice-base		-> MSACCESS.EXE(256)
+libreoffice-calc		-> EXCEL.EXE(257)
+libreoffice-impress		-> POWERPNT.EXE(1300)
+libreoffice-writer		-> WINWORD.EXE(1)
+system-file-manager		-> explorer.exe(ICO_MYCOMPUTER)
+utilities-system-monitor	-> Taskmgr.exe(30651)
+utilities-terminal		-> cmd.exe(IDI_APPICON)
+
+
+Devices
+--------
+drive-harddisk			-> imageres.dll(32)
+media-optical			-> imageres.dll(61)
+
+
+Emblems
+--------
+TODO
+
+
+Places
+-------
+folder				-> imageres.dll(3)
+folder-documents		-> imageres.dll(112)
+folder-download			-> imageres.dll(184)
+folder-music			-> imageres.dll(108)
+folder-pictures			-> imageres.dll(113)
+folder-remote			-> imageres.dll(143)
+folder-saved-search		-> imageres.dll(18)
+folder-templates		-> imageres.dll(185)
+folder-videos			-> imageres.dll(189)
+network-workgroup		-> imageres.dll(25)
+user-bookmarks			-> imageres.dll(115)
+user-desktop			-> imageres.dll(183)
+user-home			-> imageres.dll(123)
+user-trash			-> imageres.dll(55)
+
+
+Status
+-------
+audio-volume-high		-> SndVolSSO.dll(124) (Only 16x16 enabled)
+audio-volume-low		-> SndVolSSO.dll(122) (Only 16x16 enabled)
+audio-volume-medium		-> SndVolSSO.dll(123) (Only 16x16 enabled)
+audio-volume-muted		-> SndVolSSO.dll(120) (Only 16x16 enabled)
+nm-device-wired			-> pnidui.dll(3048) (Only 16x16 enabled)
+nm-no-connection		-> pnidui.dll(3020) (Only 16x16 enabled)
+user-trash-full			-> imageres.dll(54)
+xfpm-ac-adapter.png		-> taskbarcpl.dll(5) (Only 16x16 enabled) --> Needs replacement!!!
