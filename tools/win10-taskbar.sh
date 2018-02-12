@@ -117,17 +117,17 @@ xfconf-query --channel 'xfce4-panel' --property '/plugins/plugin-12/digital-form
 
 # Write Whisker Menu config file
 echo "button-title=Start
-button-icon=$repositoryPath/panel/start.png
+button-icon=$repositoryPath/dist/panel/start.png
 show-button-title=true
 show-button-icon=true" > ~/.config/xfce4/panel/whiskermenu-1.rc;
 
 # Write Web Browser launcher
-mkdir --parents '~/.config/xfce4/panel/launcher-3';
-cp '/usr/share/applications/exo-web-browser.desktop' '~/.config/xfce4/panel/launcher-3/exo-web-browser.desktop';
+mkdir --parents ~/.config/xfce4/panel/launcher-3;
+cp /usr/share/applications/exo-web-browser.desktop ~/.config/xfce4/panel/launcher-3/exo-web-browser.desktop;
 
 # Write File Manager launcher
-mkdir --parents '~/.config/xfce4/panel/launcher-4';
-cp '/usr/share/applications/exo-file-manager.desktop' '~/.config/xfce4/panel/launcher-4/exo-file-manager.desktop';
+mkdir --parents ~/.config/xfce4/panel/launcher-4;
+cp /usr/share/applications/exo-file-manager.desktop ~/.config/xfce4/panel/launcher-4/exo-file-manager.desktop;
 
 # Restart panels
 xfce4-panel --restart && sleep 1;
