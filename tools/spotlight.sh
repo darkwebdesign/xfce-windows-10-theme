@@ -29,8 +29,8 @@ function Spotlight()
     readonly SCRIPT_AUTHOR='Raymond Schouten';
 
     readonly SPOTLIGHT_PATH="$__DIR__/spotlight.jpg";
-    readonly IMAGE_URI='http://dpcphotography.tumblr.com/random';
-    readonly IMAGE_REGEX='http://[0-9]+.media.tumblr.com/[a-f0-9]+/tumblr_[a-zA-Z0-9_]+.jpg';
+    readonly IMAGE_URI='https://dpcphotography.tumblr.com/random';
+    readonly IMAGE_REGEX='https://[0-9]+.media.tumblr.com/[a-f0-9]+/tumblr_[a-zA-Z0-9_]+.jpg';
     declare -ri MIN_WIDTH=1280;
     declare -ri MIN_HEIGHT=800;
     declare -ri MAX_ATTEMPTS=10;
@@ -184,9 +184,12 @@ function Spotlight()
         local -i attempt=1;
 
         while [[ $attempt -le $MAX_ATTEMPTS ]]; do
+
             images=($(wget --quiet --output-document - "$IMAGE_URI" | grep --only-matching --extended-regexp "$IMAGE_REGEX" | uniq ));
 
             for image in "${images[@]}"; do
+
+                image="${image/https/http}";
 
                 declare -a imageDimensions=($(identify "$image" | awk '{ match($0, /([0-9]+)x([0-9]+)/, a); print a[1], a[2]; }'));
 
