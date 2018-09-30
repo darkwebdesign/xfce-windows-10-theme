@@ -102,6 +102,7 @@ xfconf-query --channel 'xfce4-panel' --property '/plugins/plugin-4/items' --crea
 xfconf-query --channel 'xfce4-panel' --property '/plugins/plugin-6/flat-buttons' --create --type 'bool' --set true;
 xfconf-query --channel 'xfce4-panel' --property '/plugins/plugin-6/include-all-monitors' --create --type 'bool' --set false;
 xfconf-query --channel 'xfce4-panel' --property '/plugins/plugin-6/show-handle' --create --type 'bool' --set false;
+xfconf-query --channel 'xfce4-panel' --property '/plugins/plugin-6/sort-order' --create --type 'int' --set 4; # None, allow drag-and-drop
 
 # Configure plugin Notification Area
 xfconf-query --channel 'xfce4-panel' --property '/plugins/plugin-8/names-visible' --create --type 'string' --set 'network' --type 'string' --set 'gigolo' --type 'string' --set 'blueman-applet' --type 'string' --set 'thunar' --type 'string' --set 'notes';
