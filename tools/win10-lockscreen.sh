@@ -30,6 +30,6 @@ declare repositoryPath="$(dirname "$scriptPath")";
 
 # Write LightDM GTK+ Greeter config file
 echo "[greeter]
-background = $repositoryPath/lockscreens/img100.jpg
+background = $repositoryPath/dist/lockscreens/img100.jpg
 indicators =
 user-background = false" > /etc/lightdm/lightdm-gtk-greeter.conf;
