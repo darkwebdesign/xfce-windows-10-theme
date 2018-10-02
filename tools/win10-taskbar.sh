@@ -119,7 +119,6 @@ xfconf-query --channel 'xfce4-panel' --property '/plugins/plugin-12/digital-form
 # Write Whisker Menu config file
 echo "button-title=Start
 button-icon=$repositoryPath/dist/panel/start.png
-show-button-title=true
 show-button-icon=true" > ~/.config/xfce4/panel/whiskermenu-1.rc;
 
 # Write Web Browser launcher
