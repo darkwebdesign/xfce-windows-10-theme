@@ -1,6 +1,0 @@
-#1/usr/bin/env bash
-
-for source in `ls *.png`; do
-    target="$(basename "$source" .png).xpm";
-    convert "$source" "$target";
-done;
